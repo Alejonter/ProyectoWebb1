@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+*{
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face {
+  font-family: 'Cyberpunk';
+  src: url('/fonts/Ryzes-ax92x.ttf') format('truetype');
+}
+
+/*ALL*/
+footer{    
+    background-color: #000;
+    padding: 10px 0;
+    bottom: 0;
+    font-size: 24px;
+    position: fixed;
+    width: 100%;
+}
+.centrado{
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+li, a, button {
+font-family: "Electrolize", sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #edf0f1;
+text-decoration: none;
+}
+.bajar2{
+    padding-top: 50px;
+}
+.clearfix{
+    clear: both;
+}
+header{
+   background: #24252A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    color: #edf0f1;
+}
+h1{
+color: #edf0f1;
+font-family: "Electrolize", sans-serif;
+font-weight: 500;
+font-size: 50px;
+background-color: #000;
+}
+h2{
+    color:#fff;
+    font-size: 50px;
+    padding: 20px 5px; 
+    margin-bottom: 10px;
+    font-family: "Electrolize", sans-serif;
+    
+}
+
+
+h4{
+    color: #edf0f1;
+font-family: "Electrolize", sans-serif;
+font-weight: 500;
+}
+h5{
+    color:#ede74e;
+    font-size: 90px;
+    padding: 20px 5px; 
+    margin-bottom: 10px;
+    /*font-family: 'Cyberpunk', sans-serif;*/
+    font-family: "Electrolize", sans-serif;
+   box-shadow: inset 0 0 0 1000px rgba(10, 50, 63, 0.4);
+}
+label{
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+}
+input{
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+}
+#pie{
+    color: #edf0f1;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+button:hover{
+    background-color:rgba(0, 136, 169, 0.8) ;
+}
+#content{
+    float: left;
+    width: 70%;
+}
+
+/*Inicio.html*/
+
+.botones{
+    color:#000;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid #000;
+    background-color: rgba(0, 136, 169, 1);
+    left: 60%;
+}
+.imgini{
+    width: 400px;
+    height: 200px; 
+    top: -50px;
+    left: calc(50%- 50px);
+}
+.secini{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid #0088a9;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0 0 0 1000px rgba(5, 15, 25, 0.4);
+    display: none;
+    
+}
+#bdinicio{
+    box-shadow: inset 0 0 0 1000px rgb(25, 5, 6, 0.4);
+    min-height: 100vh;      
+    background: url("/imagenes/fondoInicio2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #edf0f1;
+    align-items: center;
+}
+h3{
+    color: #edf0f1;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+
+}
+.logo{
+    cursor: pointer; 
+    width: 110px;
+    height: 60px;        
+    top: -50px;
+    left: calc(50%- 50px);
+} 
+.links{
+    list-style: none;
+}
+.links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.links li a {
+    transition: all 0.3s ease 0s;
+}
+.links li a:hover{
+    color: #0088a9;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid #ccc;
+    border-top: none;
+    background: #eee;
+}
+.secini {
+    animation: efect1 2s;
+}
+
+@keyframes efect1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tab button.active {
+    background-color: rgb(34, 130, 185);
+    color: #fff;
+}
+.tab {
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: rgba(0, 135, 169, 0.548);
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+    
+    /*color de la barra principal del tabulador*/
+    /*background-color: #f1f1f1;*/
+}
+.tab button {
+    background-color: inherit;
+    
+    color: #fafafa;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color:  rgb(3, 161, 252);
+    color: #fff;
+}
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    /*width: 100%; 
+    height: 100%; */
+    overflow: auto;
+    /* habilitar el scroll */
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content {
+    margin:925px;
+    display: block;
+    margin-top: 170px;
+
+    width: 40%;
+    /*tamaño de la foto ancho*/
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 40%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+@media only screen and (max-width: 925px) {
+    .modal-content {
+        width: 800px;
+        height: 600px;
+    }
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg:hover {
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: #000;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(231, 176, 66, 0.87);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*index*/
+
+#bdindex{
+    
+    min-height: 100vh;      
+    background: url("/imagenes/fondoInicio3.jpg" ) no-repeat center center fixed;
+    background-size: cover;
+}
+#container{
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+/*Login */
+
+#bdlogin{
+    
+    min-height: 100vh;      
+    background:  no-repeat center center fixed;
+    background-image: url("/imagenes/fondo3.jpg");
+    background-size: cover;
+}
+#logbox{
+    background-color: #020016 ;
+    color: #fff;
+    height: 420px;
+    width: 320px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    padding: 70px 30px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50%, -50%);
+}
+#avatar{
+    width: 100px;
+    height: 100px;   
+    position: absolute;
+    top: -50px;
+    left: calc(50%- 50px);
+}
+#logh1{
+    color: #29FCF6;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.loglabel{
+    color: #29FCF6;
+margin: 0;
+padding: 0;
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
+}
+.inn{
+width: 100%;
+margin-bottom: 20px;
+background: transparent;
+border-bottom: 1px solid #fff;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+}
+#boton{
+ padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 500;
+}
+#boton:hover{
+    background-color:rgba(0, 136, 169, 0.8) ;
+}
+
+/*Landing*/
+
+#bdlanding{
+    min-height: 100vh;      
+    background:   no-repeat center center fixed;
+    background-image: url("/imagenes/descargas.jpg");
+    background-size: cover;
+}
+.landiv{
+    background-color: transparent ;
+    color: #fff;    
+    box-sizing: border-box;
+    padding: 30px 40px;
+    top: 50%;
+    left: 50%;
+    height: 280px;
+    width: 800px;
+    position: relative;
+    transform:translate(-50%, 50%);    
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#title{
+    font-size: 100px;
+    
+}
+
+#land1{
+    display: inline-block;
+    padding: 10px 12%;
+    margin: auto;
+}
+
+#land2{
+    
+    display: flex;
+}
+#land2 button{
+    padding: 20px 80px;
+    border-radius: 50px;
+}
+#land3{
+    display: flex;
+}
+#land4{
+   
+    width: 400px;
+    height: 100px; 
+    
+}
+.social{
+    width: 100px;
+    height: 100px;   
+    cursor: pointer;
+    top: -50px;
+    left: calc(50%- 50px);
+}
+
+/*AppWeb*/
+
+    #bodyWeb {
+        overflow-x: hidden;
+    }
+    /*width: 2500px;
+        height: 790px;
+        height: 100vh
+    */
+    
+    #container_principal {
+        width: 2000px;
+        height: 650px;
+    }
+    
+    .cursor {
+        cursor: pointer;
+    }
+    
+    #headWeb {
+        padding: 10px;
+        width: 100%;
+    }
+     
+    #hweb {
+        text-align: center;
+    }
+    
+   
+    
+    .fondo {
+        padding: 5px;
+        
+        text-align: center;
+        
+    }

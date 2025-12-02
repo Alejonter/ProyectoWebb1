@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Super Mora</title>
+    <meta charset="utf-8">
+    <link href="imagenes/favicon-32x32.png" rel="icon">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="bdinicio">
+
+
+    <header>
+        <img src="imagenes/favicon-32x32.png" alt="logo" class="logo">
+
+
+
+        <nav>
+
+            <ul class="links"> <!--comando para quitar los puntitos en el menu-->
+                <li><a href="index.html">Inicio</a> </li><!--href es para enlaces-->
+                <li><a href="">login</a></li>
+                <li><a href="tour.html">Sitio Web</a></li>
+                <li><a href="landing.html">Landing</a></li>
+                <li><a href="">galeria</a></li>
+            </ul>
+        </nav>
+        <a href="contacto.html"><button>Contacto</button></a>
+    </header>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<div class="bajar2"></div>
+<div class="bajar2"></div>
+<div class="bajar2"></div>
+    <div class="tab tam1">
+                <!-- funcion que recibe un controlador de eventos (event) y un ID que representa cada pestaña -->
+            <button class="tablinks" onclick="opciones(event, 'Ini')">Inicio</button>
+            <button class="tablinks" onclick="opciones(event, 'Bebidas')">Bebidas</button>
+            <button class="tablinks" onclick="opciones(event, 'Snaks')">Snaks</button>
+
+
+            </div>
+
+<div class="bajar2"></div>
+<div class="bajar2"></div>
+    
+    <section id="Ini"  class="secini">
+        <h3 class="title">Bienvenidos a Super Mora</h3>
+        <p>
+            En Super Mora tenemos gran variedad de productos, las frutas y verduras frescas!!
+        </p>
+        
+        <div class="col-md-6">
+                    <!-- lightbox de foto-->
+                    <div class="pt-5">
+                        <img id="myImg" src="imagenes/fondo.jpg" alt="Frutas" style="max-width: 300px;">
+                        <div id="modal1" class="modal">
+                            <div class="close">&times;</div>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+
+        </div>
+        <div class="bajar2"></div>
+        <div class="centrado"></div>
+    </section>
+
+    <section id="Bebidas" class="secini">
+
+        <h3 class="title">Bebidas</h3>
+        
+        <p>Aqui el catalogo de bebidas
+        </p>
+        <a href="#" id="titulo">Fotografias</a>
+        <div class="bajar2"></div>
+        <img src="" name="thumb" class="img-fluid"><br><br>
+        <div class="bajar2"></div>
+        <div class="centrado">
+            <button class="btn btn-primary btn-lg" onclick="cambiar(-1)">Anterior</button>
+            <button class="btn btn-primary btn-lg" onclick="cambiar(1)">Siguiente</button>
+        </div>
+    </section>
+
+    
+    <section id="Snaks" class="secini">
+        <h3 class="title">Snaks</h3>
+        <p>HTML5 es la versión más nueva del Lenguaje de Marcado de Hipertexto (código en que se programan los sitios
+            web), y cambia los paradigmas de desarrollo y diseño web que se tenían al introducir herramientas notables
+            como etiquetas que permiten la publicación
+            de archivos de audio y video con soportes de distintos codecs; tags para que los usuarios dibujen contenidos
+            en 2D y 3D; cambios en los llenados de formularios; y una web semántica mucho mejor aprovechada. Una web
+            semántica mucho mejor
+            aprovechada. Una web semántica mucho mejor aprovechada.Una web semántica mucho mejor aprovechada. Una web
+            semántica mucho mejor aprovechada.
+        </p>
+        
+        <img class="imgini" src="imagenes/producto-tosty-bravos.png">
+        <div class="bajar2"></div>
+        <div class="centrado">
+            <a class="botones" href="https://www.google.com" target="blank">Ver más</a>
+        </div>
+    </section>
+
+    <div class="bajar2"></div>
+    <div class="bajar2"></div>
+    <footer class="centrado " id="pie">
+        <h4>Alejandro Mora</h4>
+        <p>Derechos Reservados</p>
+        
+       <a class="botones" href="https://www.facebook.com/p/SUPER-MORA-100037191416776/" target="blank">facebook</a>
+    <a class="botones" href="https://www.instagram.com/super_mora_acosta/" target="blank">Instagram</a>
+       
+
+
+    </footer>
+     <script src="js/inicio.js"></script> 
+     <script src="js/carousel.js"></script> 
+</body>
+
+
+
+
+
+</html>
